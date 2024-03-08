@@ -1,0 +1,25 @@
+# Site build output
+/_site
+/.sass-cache
+/.jekyll-cache
+/.jekyll-metadata
+
+# Dependency directories (Ruby gems, etc.)
+/vendor/
+/node_modules/
+
+# Environment variables and personal configuration files
+.env
+.env.*
+
+# IDE and text editor files
+/.idea/
+*.sublime*
+*.swp
+*~
+.DS_Store
+.vscode/
+*.code-workspace
+*.log
+
+
