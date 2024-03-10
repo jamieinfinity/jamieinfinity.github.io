@@ -14,6 +14,21 @@ post_class: post-template
         {% assign author = site.authors[page.author] %}
 
         <div class="col-md-11 order-md-1 flex-first flex-md-unordered">
+
+
+            <!-- Post Date -->
+            <p style="margin-bottom: 5px;">
+                <small style="font-size: 1.1em">
+                    <span class="post-date"><time class="post-date" datetime="{{ page.date | date:" %Y-%m-%d" }}">{{
+                            page.date | date_to_string }}</time></span>
+                    {% if page.last_modified_at %}
+                    (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}"
+                        itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                    {% endif %}
+                </small>
+            </p>
+
+
             <div class="mainheading">
 
                 <!-- Author Box -->
@@ -41,12 +56,6 @@ post_class: post-template
                 <h1 class="posttitle">{{ page.title }}</h1>
 
             </div>
-
-            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
-            {% if site.adsense == "enabled" %}
-            {% include adsense-under-header.html %}
-            {% endif %}
-            <!-- End Adsense -->
 
             <!-- Post Featured Image -->
             {% if page.image %}
@@ -87,17 +96,7 @@ post_class: post-template
             </div>
             {% endif %}
 
-            <!-- Post Date -->
-            <p>
-                <small>
-                    <span class="post-date"><time class="post-date" datetime="{{ page.date | date:" %Y-%m-%d" }}">{{
-                            page.date | date_to_string }}</time></span>
-                    {% if page.last_modified_at %}
-                    (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}"
-                        itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
-                    {% endif %}
-                </small>
-            </p>
+
 
             <!-- Post Categories -->
             <div class="after-post-cats">
