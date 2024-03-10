@@ -4,20 +4,30 @@ Copyright: Sal, WowThemes.net, https://www.wowthemes.net
 License: https://www.wowthemes.net/freebies-license/ 
 */
 @media screen and (min-width:1500px) {
-    html { font-size:18px; } /* Increase the font size on higher resolutions */
-    .container {max-width:80%;}
+    html {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 70%;
+    }
+
+    .post-container {
+        max-width: 100%;
+    }
 }
+
 .mainheading {
     padding: 1rem 0rem;
 }
 
 a {
-    color: #00ab6b;
+    color: #0080d0;
     transition: all 0.2s;
 }
 
 a:hover {
-    color: #038252;
+    color: #0080d0;
     text-decoration: none;
 }
 
@@ -275,11 +285,7 @@ span.post-read-more a:hover {
 .mediumnavigation .form-inline .btn:hover,
 .mediumnavigation .form-inline .btn:active {
     background: transparent;
-    color: green;
-}
-
-.mediumnavigation .navbar-brand {
-    font-weight: 500;
+    color: #0080d0;
 }
 
 .mediumnavigation .dropdown-menu {
@@ -299,9 +305,23 @@ span.post-read-more a:hover {
     cursor: pointer;
 }
 
+.mediumnavigation .navbar-brand {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .mediumnavigation .navbar-brand img {
     max-height: 30px;
-    margin-right: 5px;
+    margin-right: 17px;
+}
+
+.mediumnavigation .navbar-brand h2 {
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin: 0;
+    color: #555;
 }
 
 .mainheading h1.sitetitle {
@@ -348,10 +368,18 @@ blockquote {
     margin: 0 0 1.5rem 0;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 .featured-image {
     display: block;
+    margin: 0 auto;
     margin-bottom: 1.5rem;
+    width: 100%;
 }
+
 
 .share {
     text-align: center;

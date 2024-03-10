@@ -2,6 +2,7 @@
 layout: page
 title: Mediumish Template for Jekyll
 permalink: /about
+featured: true
 comments: true
 ---
 
