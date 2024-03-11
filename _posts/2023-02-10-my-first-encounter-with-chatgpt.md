@@ -18,6 +18,7 @@ date: 2023-02-10
 * In this post I share two simple anecdotes of how I used each tool for coding assistance on a recent creative coding project, which demonstrate how these tools can enter into the development workflow, and that sometimes they require a bit of iterative trial and error problem solving.
 * I have the sense that anyone in tech who is not incorporating these tools into their workflow is at risk of being severely outpaced by those who are able to adapt.
 
+
 ## Large language models for writing code
 
 In the past few years several tools have been developed to utilize the capabilities of large language models (LLMs) to assist with writing code. Most of these are built on the GPT (Generative Pretrained Transformer) models developed at OpenAI. As early as mid-2020 when GPT-3 first became available, people began probing its ability to generate useful code. Two prevalent tools that have emerged are [GitHub Copilot](https://github.com/features/copilot), launched in mid-2021, and the general purpose [ChatGPT](https://openai.com/blog/chatgpt/), launched in late 2022.
